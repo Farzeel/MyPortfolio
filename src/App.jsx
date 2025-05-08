@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 function App() {
 
   const [look, setLook] = useState('');
-
+  localStorage.setItem("theme", "dark");
   // useEffect(() => {
   
   //   localStorage.setItem("theme", "dark");
