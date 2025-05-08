@@ -7,7 +7,7 @@ const projects = [
     title: "Real-time Chat App",
     description:
       "Built with Express.js, React, and Socket.io, this app enables real-time messaging with a beautiful UI styled using Tailwind CSS and DaisyUI",
-    image:[ "/Edu/chat4.JPG","/Edu/chat2.JPG","/Edu/chat3.JPG","/Edu/chat1.JPG"],
+    image:[ "https://Farzeel.github.io/MyPortfolio/Edu/chat4.JPG","https://Farzeel.github.io/MyPortfolio/Edu/chat2.JPG","https://Farzeel.github.io/MyPortfolio/Edu/chat3.JPG","https://Farzeel.github.io/MyPortfolio/Edu/chat1.JPG"],
     tags: ["React", "Express.js", "MongoDb", "Socket.IO" , "TailwindCSS" , "DaisyUI"],
     demoUrl: "#",
     githubUrl: "https://github.com/Farzeel/Chat-App",
@@ -26,7 +26,7 @@ const projects = [
     title: "Blog App (React + TypeScript)",
     description:
       "This app lets users create, edit, and manage blog posts using a sleek Tiptap rich text editor, with seamless navigation powered by React Router. Built with TypeScript for type safety, it includes user authentication.",
-    image: ["/Edu/blog.JPG","/Edu/blog2.JPG","/Edu/blog3.JPG","/Edu/blog4.JPG","/Edu/blog5.JPG","/Edu/blog6.JPG"],
+    image: ["https://Farzeel.github.io/MyPortfolio/Edu/blog.JPG","https://Farzeel.github.io/MyPortfolio/Edu/blog2.JPG","https://Farzeel.github.io/MyPortfolio/Edu/blog3.JPG","https://Farzeel.github.io/MyPortfolio/Edu/blog4.JPG","https://Farzeel.github.io/MyPortfolio/Edu/blog5.JPG","/Edu/blog6.JPG"],
     tags: ["TypeScript", "ReactJs", "TailwindCSS", "React-Router-dom"],
     demoUrl: "#",
     githubUrl: "https://github.com/Farzeel/REACT-19-WITH-JS-AND-TS",
@@ -45,7 +45,7 @@ const projects = [
     id: 2,
     title: "Wordly Clone",
     description: "Built with Express.js, React, and Socket.io, this app enables real-time messaging with a beautiful UI styled using Tailwind CSS and DaisyUI. Features include JWT-based authentication, MongoDB for data storage, and seamless, responsive chat interactions",
-    image: ["/Edu/Capture.JPG"],
+    image: ["https://Farzeel.github.io/MyPortfolio/Edu/Capture.JPG"],
     tags: ["React", "TailwindCSS"],
     demoUrl: "https://farzeel.github.io/Wordly-Game/",
     githubUrl: "https://github.com/Farzeel/Wordly-Game",
