@@ -18,12 +18,10 @@ function App() {
     <>
      {/* <ScrollProgressTimeline/> */}
       <Toaster />
-      <BrowserRouter basename="/MyPortfolio">
-        <Routes>
-          <Route index element={<Home look={look} setLook={setLook}/>} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      
+        <Home look={look} setLook={setLook}/>
+        
+    
     </>
   );
 }
