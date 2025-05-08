@@ -25,7 +25,7 @@ export const Home = ({look , setLook}) => {
     }
   };
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden ">

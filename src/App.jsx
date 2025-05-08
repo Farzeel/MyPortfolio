@@ -9,11 +9,11 @@ function App() {
 
   const [look, setLook] = useState('');
 
-  useEffect(() => {
+  // useEffect(() => {
   
-    localStorage.setItem("theme", "dark");
+  //   localStorage.setItem("theme", "dark");
   
-  }, []);
+  // }, []);
   return (
     <>
      {/* <ScrollProgressTimeline/> */}
