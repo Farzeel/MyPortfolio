@@ -238,7 +238,7 @@ export function CustomScrollProgressTimeline({
     } else {
       // Horizontal orientation
       return (
-        <div className={`${getPositionClasses()} hidden md:block`}>
+        <div className={`${getPositionClasses()}  md:block`}>
           {/* Main timeline container */}
           <div className={`relative flex items-center px-4 w-${width}`}>
             {/* Horizontal line */}
@@ -300,7 +300,7 @@ export function CustomScrollProgressTimeline({
             {/* Scroll percentage */}
             {showPercentage && (
               <div 
-                className={`absolute ${position === "top" ? "-top-12" : "-bottom-12"} text-center text-xs font-mono`}
+                className={`absolute ${position === "top" ? "-top-12" : "-bottom-8"} text-center text-xs font-mono`}
                 style={{ left: `${scrollProgress}%`, transform: "translateX(-50%)" }}
               >
                 <div className={`${styles.percentageBg} ${styles.percentageText} px-2 py-1 rounded-md backdrop-blur-sm`}>

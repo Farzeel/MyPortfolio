@@ -9,7 +9,7 @@ import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import EducationSection from "../components/EductaionSection";
 import { CustomScrollProgressTimeline } from "../components/scrollanimation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export const Home = ({look , setLook}) => {
@@ -27,6 +27,16 @@ export const Home = ({look , setLook}) => {
 
   const [isDarkMode, setIsDarkMode] = useState(true);
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+
+    
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden ">
       {/* Theme Toggle */}
@@ -41,12 +51,12 @@ export const Home = ({look , setLook}) => {
       {/* <ScrollProgressTimeline/> */}
       <CustomScrollProgressTimeline 
         
-        orientation="vertical" // or "horizontal"
-        position="left" // "left", "right", "top", or "bottom"
-        height="64" // tailwind height class for vertical orientation
-        width="96" // tailwind width class for horizontal orientation
+        orientation={`${windowWidth>600 ?"vertical":"horizontal"}`} // or "horizontal"
+        position="left" 
+        height="64" 
+        width="96" 
         showPercentage={true}
-        theme="cosmic" // "cosmic", "minimal", or "light"
+        theme="cosmic" 
       />
         <HeroSection />
         <AboutSection />
